@@ -25,3 +25,8 @@ a {
 	width: 96px;
 	height: auto;
 }
+
+.image-head-div {
+	display: flex;
+	justify-content: center;
+}
