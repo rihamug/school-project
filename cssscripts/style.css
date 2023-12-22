@@ -1,0 +1,46 @@
+body {
+	background-color: white;
+	width: 960px;
+	margin: 0px auto;
+}
+
+.logo {
+	background-color: lightblue;
+	width: 96px;
+	height: auto;
+}
+
+.headdiv {
+	display: flex;
+	justify-content: space-evenly;
+/*	background-color: red;*/
+	border-radius: 10px;
+	height: 30px;
+	border: solid black;
+	padding-top: 15px;
+	background-color: lightgreen;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+/*.banner {
+	height: 240px;
+	width: 960px;
+}*/
+
+.h1div {
+	display: flex;
+	justify-content: center;
+}
+
+.servdiv {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.servimg {
+	width: 320px;
+	height: auto;
+}

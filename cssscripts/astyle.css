@@ -1,0 +1,47 @@
+body {
+	width: 960px;
+	margin: 0px auto;
+}
+
+.logo {
+	background-color: lightblue;
+	width: 96px;
+	height: auto;
+}
+
+
+.menudiv {
+	display: flex;
+	justify-content: space-evenly;
+	border-radius: 10px;
+	height: 30px;
+	border: solid black;
+	padding-top: 15px;
+	background-color: lightgreen;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.headdiv {
+	display: flex;
+	justify-content: center;
+}
+#section {
+	display: flex;
+	float: right;
+}
+
+
+img{
+	width: 320px;
+	height: autos;
+
+}
+#mission h1 {
+	display: flex;
+	justify-content: right;
+	column-gap: 20px;
+}

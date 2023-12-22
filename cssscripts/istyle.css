@@ -1,0 +1,27 @@
+body {
+	margin: 0px auto;
+	width: 960px;
+	background-color: white;
+}
+
+.headdiv {
+	display: flex;
+	justify-content: space-evenly;
+/*	background-color: red;*/
+	border-radius: 10px;
+	height: 30px;
+	border: solid black;
+	padding-top: 15px;
+	background-color: lightgreen;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.logo {
+	background-color: lightblue;
+	width: 96px;
+	height: auto;
+}
