@@ -7,7 +7,7 @@ body {
 }
 
 .logo {
-	background-color: lightblue;
+	
 	width: 96px;
 	height: auto;
 }
@@ -35,6 +35,9 @@ a {
 .h1div {
 	display: flex;
 	justify-content: center;
+	border-radius: 10px;
+	background-color: lightgreen;
+	border: solid black;
 }
 
 .servdiv {
