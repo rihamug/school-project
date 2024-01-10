@@ -1,13 +1,13 @@
 body {
 	background-color: white;
-/*	width: 960px;*/
+	/*	width: 960px;*/
 	margin: 0px auto;
 	padding-left: 10rem;
 	padding-right: 10rem;
 }
 
 .logo {
-	
+
 	width: 96px;
 	height: auto;
 }
@@ -15,7 +15,7 @@ body {
 .headdiv {
 	display: flex;
 	justify-content: space-evenly;
-/*	background-color: red;*/
+	/*	background-color: red;*/
 	border-radius: 10px;
 	height: 30px;
 	border: solid black;
@@ -27,8 +27,9 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
 .banner {
-	
+
 	width: 100%;
 }
 
@@ -53,7 +54,10 @@ a {
 .help {
 	display: flex;
 	justify-content: space-evenly;
-	
-	
+
+
 }
 
+.banner_img {
+	padding-left: 100px;
+}
