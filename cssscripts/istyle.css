@@ -30,3 +30,9 @@ a {
 	display: flex;
 	justify-content: center;
 }
+
+.help {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 10px;
+}
