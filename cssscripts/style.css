@@ -50,16 +50,10 @@ a {
 	height: auto;
 }
 
-/*#banner-img {
+.help {
 	display: flex;
-	justify-content: center;
-}*/
-
-@media only screen and (max-width:960px ) {
-	body {
-	background-color: white;
+	justify-content: space-evenly;
 	
-	margin: 0px auto;
+	
+}
 
-}
-}

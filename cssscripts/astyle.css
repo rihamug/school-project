@@ -65,3 +65,9 @@ a {
 	column-gap: 20px;
 	padding-left: 100px;
 }
+
+.help {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 10px;
+}
