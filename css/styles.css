@@ -51,7 +51,7 @@ a {
 	height: auto;
 }
 
-.help {
+.banner-division{
 	display: flex;
 	justify-content: space-evenly;
 
@@ -60,4 +60,56 @@ a {
 
 .banner_img {
 	padding-left: 100px;
+}
+
+
+.quote-image {
+	width: 500px;
+	height: auto;
+}
+
+/*=========Mission Statement======*/
+.mission-image{
+	width: 49%;
+	float: left;
+}
+.mission-statement{
+	width: 49%;
+	float:right;
+}
+.mission-statement h2 {
+	padding-left: 20px;
+}
+
+.mission-statement p {
+	padding-left: 20px;
+}
+
+/*========Form Styles======*/
+input {
+	width: 960px;
+	height:50px;
+	text-align: center;
+	border-radius: 10px;
+	border:solid 3px black;
+	padding-left: 10px;
+	background-color: white;
+	font-size: 1rem;
+	color: black;
+}
+
+.contact-div {
+	display: flex;
+	justify-content: center;
+}
+
+button {
+	font-size: 15px;
+	border-radius: 15px;
+	padding: 10px 20px;
+	border: solid black;
+	width: 19rem;
+	cursor: pointer;
+	background-color: lightgreen;
+
 }
