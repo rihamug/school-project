@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
 body {
+	font-family: Roboto;
 	background-color: white;
 	/*	width: 960px;*/
 	margin: 0px auto;
@@ -60,6 +62,8 @@ a {
 
 .banner_img {
 	padding-left: 100px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 
@@ -72,6 +76,7 @@ a {
 .mission-image{
 	width: 49%;
 	float: left;
+	box-shadow: 10px 10px 5px;
 }
 .mission-statement{
 	width: 49%;
@@ -112,4 +117,24 @@ button {
 	cursor: pointer;
 	background-color: lightgreen;
 
+}
+
+@keyframes slideshow{
+	0%   {background: url('../images/banner.jpg');}
+	25%  {background: url('../images/banner2.png');}
+	50%  {background: url('../images/banner3.jpg');}
+	75%  {background: url('../images/banner4.jpg');}
+	100% {background: url('../images/banner5.jpg');}
+	
+
+}
+
+#slideshow{
+	height:480px;
+	width:100%;
+	background:url('../images/banner.jpg');
+/*	background-size:cover;*/
+	animation-name: slideshow;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
 }
