@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click_button" onclick="clicked()" ondblclick="clickedtwo()">click</button>
+    <script>
+        let body = document.querySelector("body")
+        function clicked() {
+            body.style = "background:red"
+        }
+        function clickedtwo() {
+            body.style = "background:blue"
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body></body>
+<section>
+    <p id="title">
+        This is testing for java script
+    </p>
+    <div>
+        <input type="text" id="text_input">
+        <button id="click" onclick="clicked()">Click!</button>
+    </div>
+    <br>
+    <div>
+        <form>
+            <label>Username</label>
+            <input type="text">
+            <label>Password</label>
+            <input type="password">
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</section>
+<script>
+    var age = 20;
+    let name = "Rahim", error = false;
+    const isMale = true;
+    // console.log(name);
+    let title = document.getElementById("title");
+    title.innerHTML = name;
+    let body = document.querySelector("body");
+    body.style = "background:blue"
+    console.log(title)
+    let text_input = document.querySelector("#text_input");
+
+
+    function clicked() {
+        // console.log("clicked")
+        checkNameError()
+        updateName()
+        updateBodyColour()
+        
+    }
+
+    function updateBodyColour() {
+        if(error == true) return false;
+        body.style = "background:purple"
+    }
+
+    function updateName() {
+        if(error == true) return false;
+        let inputValue = text_input.value;
+        title.innerHTML = inputValue;
+        // body.style = "background:url('images/banner.jpg')"
+    }
+    
+    function checkNameError() {
+        let inputValue = text_input.value;
+        if (inputValue.length > 0) {
+            if (inputValue.length < 5 ) {
+                console.log("name too short")
+                error = true
+                
+            }else{error = false}
+            error = false
+            console.log("Found")
+
+        }
+        else{
+            console.log("nothing");
+            error = true
+            
+        }
+    }
+</script>
+
+</body>
+
+</html>

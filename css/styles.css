@@ -131,7 +131,7 @@ button {
 
 #slideshow{
 	height:480px;
-	width:100%;
+	width:960px;
 	background:url('../images/banner.jpg');
 /*	background-size:cover;*/
 	animation-name: slideshow;
