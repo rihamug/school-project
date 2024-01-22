@@ -29,6 +29,58 @@
     </div>
 </section>
 <script>
+
+        let car = {
+            name:"Audi",
+            year:2014, 
+            color:"white", 
+            brandNew: false,
+            owners: {
+                firstOwner:{
+                    name: "Brian",
+                    number: 779900567,
+                },
+           },
+            taxBracket: null,
+            mileage: undefined,
+        }
+
+        car.mileage = 60000
+        
+
+
+    let carName = car.name, 
+        carYear = car.year, 
+        carFirstOwner = car.owners.firstOwner.name,
+        carMileage = car.mileage;
+    
+        car.owners.firstOwner.age = 25
+        car.leatherSeats = true
+        car.bootSize = "20L"
+        car.rims = true
+        car.bodyKit = false
+        car.wheelSize = "20 inches"
+
+        car = {}
+        car.name = "Mercedes"
+        car.color = "chrome"
+        car.model = "S class"
+        car.transmission = "manual"
+    console.log(car)
+
+
+
+                
+        console.log(`
+            ${carName}
+            ${carYear}
+            ${carFirstOwner}
+            ${carMileage}
+        `)
+
+
+
+
     var age = 20;
     let name = "Rahim", error = false;
     const isMale = true;
@@ -37,7 +89,7 @@
     title.innerHTML = name;
     let body = document.querySelector("body");
     body.style = "background:blue"
-    console.log(title)
+    // console.log(title)
     let text_input = document.querySelector("#text_input");
 
 

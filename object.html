@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <h1>Client Details</h1>
+    <br>
+    <label>First Name</label><br>
+    <br>
+    <input type="text" placeholder="First Name" id="fname"><br>
+    <br>
+    <label>Sir Name</label><br>
+    <br>
+    <input type="text" placeholder="Sir Name" value="" id="sirname"><br>
+    <br>
+    <label>Age</label><br>
+    <br>
+    <input type="number" placeholder="Age" value="" id="clientage"><br>
+    <br>
+    <label>Gender</label><br>
+    <br>
+    <input type="text" placeholder="Gender" value="" id="clientgender"><br>
+    <br>
+    <label>Address</label><br>
+    <br>
+    <input type="text" placeholder="Address" value="" id="clientaddress"><br>
+    <button onclick="fillin()" >Fill In</button>
+    <br>
+    <button onclick="saveToDatabase()">Save Information</button>
+    <hr>
+    <div>
+        <h3>First Name:</h3>
+        <span id="outputfname"></span>
+    </div>
+    <div>
+        <h3>Sir Name:</h3>
+        <span id="outputsirname"></span>
+     </div>
+     <div>
+        <h3>Age:</h3>
+        <span id="outputage"></span>
+    </div>
+    <div>
+        <h3>Gender:</h3>
+        <span id="outputgender"></span>
+    </div>
+    <div>
+        <h3>Address:</h3>
+        <span id="outputaddress"></span>
+    </div>
+    
+
+
+
+    <script>
+       let fname = document.getElementById("fname") 
+       let sirname = document.getElementById("sirname")
+       let clientage = document.getElementById("clientage")
+       let clientgender = document.getElementById("clientgender")
+       let clientaddress = document.getElementById("clientaddress")
+
+       let client = {
+        firstName:null,
+        sirName:null,
+        age:null,
+        gender:null,
+        address:null,
+       }
+
+       let outputfname = document.getElementById("outputfname");
+       let outputsirname = document.getElementById("outputsirname");
+       let outputage = document.getElementById("outputage");
+       let outputgender = document.getElementById("outputgender");
+       let outputaddress = document.getElementById("outputaddress");
+
+       function fillin() {
+        client.firstName = fname.value
+        client.sirName = sirname.value
+        client.age = clientage.value
+        client.gender = clientgender.value
+        client.address = clientaddress.value
+        
+        outputfname.innerHTML = client.firstName
+        outputsirname.innerHTML = client.sirName
+        outputage.innerHTML = client.age
+        outputgender.innerHTML = client.gender
+        outputaddress.innerHTML = client.address
+       }
+
+       function saveToDatabase() {
+        console.log(client)
+       }
+
+
+    </script>
+
+</body>
+</html>
